@@ -87,6 +87,7 @@ MVC / MVT Architecture
 
 Backend Web Development Best Practices
 
+
 ATS-Optimized Keywords
 
 Python Developer
@@ -108,6 +109,8 @@ Backend Web Development
 User Permissions & Groups
 
 Git & GitHub
+
+
 
 **License**
 
