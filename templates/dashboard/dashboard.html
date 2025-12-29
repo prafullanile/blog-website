@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+
+    <!-- LEFT SIDEBAR -->
+    <div class="col-md-3">
+        {% include 'dashboard/sidebar.html' %}
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="col-md-9">
+
+        <!-- Logged in user -->
+        <div class="mb-3">
+            <span>Logged in as <b>{{ user }}</b></span>
+        </div>
+
+        <!-- CARDS ROW -->
+        <div class="row">
+
+            <!-- ALL CATEGORIES -->
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-header text-uppercase font-weight-bold">
+                        All Categories
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ category_count }}</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALL POSTS -->
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-header text-uppercase font-weight-bold">
+                        All Posts
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ blogs_count }}</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}
